@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pagebkg"
+    tools:context=".EditProfileActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+<!--        Container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+
+            <!--Edit Profile Title-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"/>
+
+<!--            Full Name-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editName"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Full Name"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+<!--            DOB-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editDob"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+<!--            Address-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editAddress"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Address"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+<!--            Phone-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editPhone"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+<!--            Username-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editUsername"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Username"
+                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+<!--            Password-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editPassword"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+
+<!--            Save Changes Button-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Save Changes"
+                android:id="@+id/saveButton"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                app:cornerRadius="20dp"/>
+
+<!--            Delete Account Button-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Delete Account"
+                android:id="@+id/deleteAccountBtn"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="#801515"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

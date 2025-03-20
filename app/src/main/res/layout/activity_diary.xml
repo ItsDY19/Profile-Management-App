@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebkg"
+    tools:context=".DiaryActivity">
+
+    <!-- Title Label -->
+    <TextView
+        android:id="@+id/diaryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Diary"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <!-- Entry Form Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/entryCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="16dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/diaryName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+<!--        Container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title Input -->
+            <EditText
+                android:id="@+id/diaryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Diary Title"
+                android:inputType="textCapSentences"
+                android:padding="12dp" />
+
+            <!-- Description Input -->
+            <EditText
+                android:id="@+id/diaryDescription"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Diary Entry Description"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:padding="12dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveDiaryEntryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Diary Entry"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Back"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/entryCard"
+        app:layout_constraintLeft_toLeftOf="@id/entryCard"
+        app:layout_constraintRight_toRightOf="@id/entryCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

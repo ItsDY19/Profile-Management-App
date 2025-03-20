@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "920990948601",
+    "project_id": "profile-management-app-d7820",
+    "storage_bucket": "profile-management-app-d7820.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920990948601:android:daff0f82e98cad11a85628",
+        "android_client_info": {
+          "package_name": "com.example.profilemanagementapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiZBgOQV2OxI6TfvrfGCe2QiRrVZkcGR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
