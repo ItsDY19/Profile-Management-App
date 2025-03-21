@@ -144,12 +144,12 @@ public class LoginActivity extends AppCompatActivity {
                         startActivity(intent);
                     } else {
                         Log.d("Login", "Password mismatch or null.");
-                        loginPassword.setError("Invalid Credentials");
-                        loginPassword.requestFocus();
+                        loginPassword.setError("Incorrect username or password");
+                        loginUsername.setError("Incorrect username or password");
                     }
                 } else {
-                    loginUsername.setError("User does not exist");
-                    loginUsername.requestFocus();
+                    loginUsername.setError("Incorrect username or password");
+                    loginPassword.setError("Incorrect username or password");
                 }
             }
             @Override
