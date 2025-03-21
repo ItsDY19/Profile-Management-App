@@ -39,6 +39,6 @@
             android:layout_width="90dp"
             android:layout_height="40dp"
             android:text="Delete"
-            android:backgroundTint="@color/lavender"/>
+            android:backgroundTint="#801515"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
